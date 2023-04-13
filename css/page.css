@@ -34,7 +34,8 @@ body {
 .menu_body{
     display: flex;
     justify-content: space-between;
-    gap: clamp(1.875rem, 0.284rem + 7.95vw, 6.25rem);
+    /* gap: clamp(1.875rem, 0.284rem + 7.95vw, 6.25rem); */
+    gap: clamp(0.938rem, -0.994rem + 9.66vw, 6.25rem);
 }
 
 .menu__item{
