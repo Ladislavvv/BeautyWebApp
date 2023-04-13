@@ -4,8 +4,8 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     font-family: 'Inter', sans-serif;
-    background-color: #F2DAEB;
-    /* background-color: #ebebeb; */
+/*     background-color: #F2DAEB; */
+    background-color: #ebebeb;
     color:#000;
 }
 
