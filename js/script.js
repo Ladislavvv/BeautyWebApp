@@ -119,7 +119,7 @@ cards.forEach(card => {
 const overlay = document.querySelector('.overlay');
 const popup = document.querySelector('.popup');
 const popup__container = document.querySelector('.popup-container');
-
+// const popupCLoseBtn = document.querySelector('close-btn')
 
 
 function openPopup(id) {
