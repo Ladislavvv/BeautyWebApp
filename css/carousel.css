@@ -1,0 +1,28 @@
+.carousel-item{
+    height: 470px;
+    width: 470px;
+}
+
+.carousel-item img{
+    height: 470px;
+    width: 470px;
+}
+
+.carousel{
+    height: 470px;
+    width: 470px;
+}
+
+/* .carousel-inner{
+    height: 470px;
+    width: 470px;
+} */
+
+
+.carousel-control-prev-icon{
+    background-image: url("../img/icons/arrow-left.png");
+}
+
+.carousel-control-next-icon{
+    background-image: url("../img/icons/arrow-right.png");
+}
