@@ -321,6 +321,8 @@ body {
 .description__about {
     font-weight: 300;
     font-size: 15px;
+    max-height: 240px;
+    overflow: auto;
 }
 
 .price{
@@ -331,4 +333,8 @@ body {
 .price__cnt{
     font-weight: 300;
     font-size: 22px;
+}
+
+.hide{
+    display: none;
 }
