@@ -1,11 +1,13 @@
 .carousel-item{
     height: 370px;
     width: 370px;
+    overflow: hidden;
 }
 
 .carousel-item img{
     height: 370px;
-    width: 370px;
+    width: auto;
+    
 }
 
 .carousel{

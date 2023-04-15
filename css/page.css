@@ -38,6 +38,9 @@ body {
     gap: clamp(0.938rem, -0.994rem + 9.66vw, 6.25rem);
 }
 
+.logo{
+    width: 100px;
+}
 .menu__item{
     margin: 15px 0;
 }
@@ -50,6 +53,7 @@ body {
 
     transition: color 0.2s ease-in-out;
 }
+
 
 .menu__link:hover {
     color: #e23f3f;
@@ -160,7 +164,7 @@ body {
     margin-bottom: clamp(0.938rem, 0.528rem + 2.05vw, 2.063rem);
 }
 
-.brand__cards{
+.brand__cards, .brand__cards2{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -229,6 +233,10 @@ body {
 
 
 /* Popup */
+
+body.popup-open {
+    overflow: hidden;
+  }
 
 .popup {
     position: fixed;
