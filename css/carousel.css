@@ -20,6 +20,26 @@
 } */
 
 
+
+@media only screen and (max-width: 480px){
+    .carousel-item{
+        height: 278px;
+        width: 278px;
+        overflow: hidden;
+    }
+    
+    .carousel-item img{
+        height: 278px;
+        width: 278px;
+    }
+    
+    .carousel{
+        height: 278px;
+        width: 278px;
+    }
+}
+
+
 .carousel-control-prev-icon{
     background-image: url("../img/icons/arrow-left.png");
 }
