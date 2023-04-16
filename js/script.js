@@ -10,7 +10,7 @@ const cards = [
   {
     brand: "Kerastase",
     price: 4200,
-    imgSrc: ["../img/items/Nashi Argan/1.png", "../img/items/Nashi Argan/2.png"],
+    imgSrc: ["../img/items/Nashi Argan/2.png", "../img/items/Nashi Argan/2.png"],
     description: 'Шампунь Nutritive для сухих волос',
     fullDescription: "ТУТ ПОЛНОЕ ОПИСАНИЕ2 ТУТ ПОЛНОЕ ОПИСАНИЕ2 ТУТ ПОЛНОЕ ОПИСАНИЕ2 ТУТ ПОЛНОЕ ОПИСАНИЕ2",
     id: 2
@@ -26,7 +26,7 @@ const cards = [
   {
     brand: "L'Oreal Professionnel",
     price: 1500,
-    imgSrc: ["../img/items/Nashi Argan/1.png"],
+    imgSrc: ["../img/items/Nashi Argan/2.png"],
     description: "Шампунь Vitamino Color для окрашенных волос",
     fullDescription: "ТУТ ПОЛНОЕ ОПИСАНИЕ4",
     id: 4
@@ -42,7 +42,7 @@ const cards = [
   {
     brand: "L'Oreal Professionnel",
     price: 1500,
-    imgSrc: ["../img/items/Nashi Argan/1.png"],
+    imgSrc: ["../img/items/Nashi Argan/3.jpg", "../img/items/Nashi Argan/4.jpg", "../img/items/Nashi Argan/2.png", "../img/items/Nashi Argan/1.png"],
     description: "Шампунь Vitamino ыпыпыпColor для окрашенных волос",
     fullDescription: "ТУТ ПОЛНОЕ ОПИСАНИЕ6",
     id: 6
