@@ -256,7 +256,7 @@ body {
     gap: 20px;
     margin-bottom: 50px;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: start;
 }
 
 .brand__card{
@@ -410,8 +410,8 @@ body.popup-open {
 }
 .description__about {
     font-weight: 300;
-    font-size: 15px;
-    max-height: 240px;
+    font-size: 12px;
+    max-height: 200px;
     overflow: auto;
 }
 
@@ -438,13 +438,13 @@ body.popup-open {
 
 .footer__wrapper{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 20px 0;
 }
 
 .footer__item{
     font-weight: 200;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .socials{
