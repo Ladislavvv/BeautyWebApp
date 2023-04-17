@@ -23,19 +23,25 @@
 
 @media only screen and (max-width: 480px){
     .carousel-item{
-        height: 278px;
-        width: 278px;
+        /* height: 278px;
+        width: 278px; */
+        height: 100%;
+        width: 100%;
         overflow: hidden;
     }
     
     .carousel-item img{
-        height: 278px;
-        width: 278px;
+        /* height: 278px;
+        width: 278px; */
+        height: 100%;
+        width: 100%;
     }
     
     .carousel{
-        height: 278px;
-        width: 278px;
+        /* height: 278px;
+        width: 278px; */
+        height: 100%;
+        width: 100%;
     }
 }
 

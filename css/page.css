@@ -595,6 +595,7 @@ body.popup-open {
     .popup-container{
         width: 85%;
         height: auto;
+        max-height: 550px;
         display: flex;
         flex-direction: column;
         padding: 10px 20px;
@@ -630,6 +631,11 @@ body.popup-open {
     }
     .description__about{
         margin-bottom: 0px;
+        /* border: 1px solid #000; */
+        /* border-radius: 5px;
+        outline: #000 solid 1px;
+        outline-offset: 4px; */
+        /* background: #ffa; */
     }
 }
 
@@ -637,7 +643,8 @@ body.popup-open {
     .popup-container{
         /* width: clamp(46.875rem, 23.542rem + 48.61vw, 60rem); */
         width: 80%;
-        height: 550px;
+        height: auto;
+        max-height: 450px;
         display: flex;
         flex-direction: column;
         padding: 20px 20px;
