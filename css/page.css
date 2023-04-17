@@ -16,9 +16,7 @@ body {
     /* padding: 0 10px; */
 }
 
-.header {  
 
-}
     
 .header__container{
     /* margin: 0 auto; */
@@ -305,6 +303,11 @@ body {
     white-space: nowrap;
     position: relative;
 }
+
+.type__link:hover{
+    color: #000;
+}
+
 .type__link::after{
     content: "";
     position: absolute;

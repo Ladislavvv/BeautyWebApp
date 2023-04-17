@@ -563,16 +563,16 @@ function renderCards(typeMass, dataCards) {
         cardImg.appendChild(img);
         newCard.appendChild(cardImg);
 
-        // добавляем в него цену
-        const cardPrice = document.createElement('div');
-        cardPrice.classList.add('card__price');
-        const price = document.createElement('span');
-        price.innerText = card.price;
-        cardPrice.appendChild(price);
-        const currency = document.createElement('span');
-        currency.innerText = '₽';
-        cardPrice.appendChild(currency);
-        newCard.appendChild(cardPrice);
+        // // добавляем в него цену
+        // const cardPrice = document.createElement('div');
+        // cardPrice.classList.add('card__price');
+        // const price = document.createElement('span');
+        // price.innerText = card.price;
+        // cardPrice.appendChild(price);
+        // const currency = document.createElement('span');
+        // currency.innerText = '₽';
+        // cardPrice.appendChild(currency);
+        // newCard.appendChild(cardPrice);
 
         // добавляем в него бренд
         const brand = document.createElement('p');
