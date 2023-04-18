@@ -378,7 +378,8 @@ body {
 
 .card__img{
     width: 365px;
-    height: 311px;
+    /* height: 311px; */
+    height: 365px;
     margin-bottom: 11px;
     border: 1px solid #000;;
 }
@@ -441,7 +442,8 @@ body {
     
     .card__img{
         width: clamp(8.5rem, -1.25rem + 48.75vw, 13.375rem);
-        height: clamp(7.188rem, -1.188rem + 41.88vw, 11.375rem);
+        /* height: clamp(7.188rem, -1.188rem + 41.88vw, 11.375rem); */
+        height: clamp(8.5rem, -1.25rem + 48.75vw, 13.375rem);;
         margin-bottom: 7px;
     }
     
