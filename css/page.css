@@ -75,6 +75,9 @@ body {
     gap: 164px;
     margin-bottom: 0;
     padding-left: 0;
+    /* padding-right: 125px; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logo{
@@ -116,7 +119,7 @@ body {
     .header__nav{
         /* gap: 35px; */
         /* gap: clamp(1.25rem, -0.625rem + 9.38vw, 2.188rem); */
-        gap: clamp(2.188rem, -3.188rem + 17.92vw, 10.25rem);
+        /* gap: clamp(2.188rem, -3.188rem + 17.92vw, 10.25rem); */
     }
 
     .nav__menu{
@@ -124,6 +127,9 @@ body {
         gap: clamp(2.188rem, -3.188rem + 17.92vw, 10.25rem);
         /* gap: clamp(0.625rem, -2.5rem + 15.63vw, 2.188rem); */
         height: clamp(3.75rem, 2.083rem + 5.56vw, 6.25rem);
+        /* padding-right: 0; */
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .nav__item{
