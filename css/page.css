@@ -319,6 +319,10 @@ body {
     /* z-index: 1; */
 }
 
+.type__item:last-child{
+    padding-right: 0;
+}
+
 
 
 .type__link{
