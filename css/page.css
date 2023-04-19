@@ -33,10 +33,23 @@ body {
     position: relative;
 }
 
-.header__container::after {
+/* .header__container::after {
     content: '';
     position: absolute;
     bottom: 8px;
+    left: 0;
+    right: 0;
+    height: 1px; 
+    background-color: #000;
+  } */
+
+  .header{
+    position: relative;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    top: 100px;
     left: 0;
     right: 0;
     height: 1px; 
@@ -128,6 +141,10 @@ body {
 
 
 @media only screen and (max-width: 768px) {
+    .header::after {
+        top: 60px;
+      }
+    
     .header__nav{
         /* gap: 35px; */
         /* gap: clamp(1.25rem, -0.625rem + 9.38vw, 2.188rem); */
@@ -223,7 +240,11 @@ body {
     max-width: 250px;
     font-weight: 300;
     font-size: 25px;
-    /* text-align: center;  */
+    
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .body__link:hover{
@@ -730,24 +751,91 @@ body.popup-open {
 /* FOOTER */
 
 .footer{
-    background-color: #D9D9D9;
+    background-color: #f3f3f3;
+    position: relative;
+}
+
+.footer::before{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    right: 0;
 }
 
 .footer__wrapper{
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+    align-items: center;
+}
+
+.footer-logo{
+    width: 200px;
+    height: 200px;
+}
+
+.footer-logo > a > img{
+    width: 200px;
+    height: 200px;
 }
 
 .footer__item{
     font-weight: 200;
+    font-size: 30px;
+    padding-top: 15px;
+}
+.footer__item:first-child{
+    padding-top: 0;
+}
+
+.tel{
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.email{
     font-size: 20px;
 }
 
 .socials{
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 12px;
     padding: 0;
     margin: 0;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+}
+
+@media only screen and (max-width: 768px){
+    .footer-logo{
+        width: clamp(5rem, -7.5rem + 41.67vw, 12.5rem);
+        height: clamp(5rem, -7.5rem + 41.67vw, 12.5rem);
+    }
+    
+    .footer-logo > a > img{
+        width: clamp(5rem, -7.5rem + 41.67vw, 12.5rem);
+        height: clamp(5rem, -7.5rem + 41.67vw, 12.5rem);
+    }
+
+    .footer__item{
+        font-size: clamp(0.75rem, -1.125rem + 6.25vw, 1.875rem);
+        padding-top: clamp(0.375rem, -0.563rem + 3.13vw, 0.938rem);
+    }
+    .tel{
+        font-size: clamp(0.75rem, -0.5rem + 4.17vw, 1.5rem);
+    }
+    .email{
+        font-size: clamp(0.75rem, -0.5rem + 4.17vw, 1.5rem);
+    }
+    .socials{
+        gap: clamp(0.375rem, -0.25rem + 2.08vw, 0.75rem);
+    }
+    .social-item > a >img{
+        width: clamp(0.75rem, -1.125rem + 6.25vw, 1.875rem);
+        height: clamp(0.75rem, -1.125rem + 6.25vw, 1.875rem);
+    }
 }
