@@ -529,7 +529,7 @@ function renderCards(typeMass, dataCards) {
         cardImg.classList.add('card__img');
         const img = document.createElement('img');
         img.setAttribute('src', card.imgSrc[0]);
-        img.setAttribute('alt', '');
+        img.setAttribute('alt', card.description);
         cardImg.appendChild(img);
         newCard.appendChild(cardImg);
 
