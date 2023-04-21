@@ -277,23 +277,14 @@ for (let k = 0; k < brand_СardsMass.length; k++) {
     renderCards(dataMass, dataBrandCard)
 }
 
-// const brandCards = document.querySelector('.brand__cards');
-
-
 function renderCards(typeMass, dataCards) {
-
-
-    // проходим по каждому объекту в массиве cards
     typeMass.forEach(card => {
-        // создаем новый элемент карточки
         const newCard = document.createElement('div');
 
         newCard.classList.add('brand__card');
         newCard.id = card.id;
         newCard.setAttribute('onclick', 'openPopup(id, this)');
-        // newCard
 
-        // добавляем в него изображение
         const cardImg = document.createElement('div');
         cardImg.classList.add('card__img');
         const img = document.createElement('img');
@@ -313,21 +304,16 @@ function renderCards(typeMass, dataCards) {
         // cardPrice.appendChild(currency);
         // newCard.appendChild(cardPrice);
 
-        // добавляем в него бренд
         const brand = document.createElement('p');
         brand.classList.add('card__brand');
         brand.innerText = card.brand;
         newCard.appendChild(brand);
 
-        // добавляем в него описание
         const description = document.createElement('p');
         description.classList.add('card__about');
         description.innerText = card.description;
         newCard.appendChild(description);
-
-        // добавляем новую карточку в контейнер
         dataCards.appendChild(newCard);
-
     });
 }
 
@@ -338,8 +324,6 @@ const popup__container = document.querySelector('.popup-container');
 const bodyEl = document.querySelector('body');
 
 function openPopup(id, hero) {
-    // const popup = document.querySelector('.popup');
-    // const bodyEl = document.querySelector('body');
     popup.classList.add('active');
     bodyEl.classList.add('popup-open');
 
@@ -356,15 +340,10 @@ function closePopup() {
 overlay.addEventListener('click', function (event) {
     const popup__container = document.querySelector('.popup-container');
     const isClickInsidePopup = popup__container.contains(event.target);
-    // console.log(isClickInsidePopup);
     if (!isClickInsidePopup) {
         closePopup();
     }
 });
-
-
-
-// Актуализация инфы в модалке
 
 const popupTitle = document.querySelector('.title');
 const popupBrand = document.querySelector('.description__brand');
@@ -376,38 +355,24 @@ const allCards = document.querySelectorAll('.brand__card');
 
 
 function updatePopup(num, hero) {
-    // let data = cards.find((card) => card.id == num){
-    //   popupTitle.innerHTML
-    // }
     const paretnBrandcards = hero.parentNode;
-    // console.log(paretnBrandcards);
-
     let dataIdCard;
     for (let p = 0; p < brand_СardsMass.length; p++) {
         if (paretnBrandcards == brand_СardsMass[p]) {
             dataIdCard = p;
-            // console.log(dataIdCard);
         }
     }
     all_Cards[dataIdCard].forEach(card => {
         if (card.id == num) {
-            // const newPrice = card.querySelector('card-price');
             const cardId = num - 1;
 
             popupBrand.innerHTML = all_Cards[dataIdCard][cardId].brand;
             popupName.innerHTML = all_Cards[dataIdCard][cardId].description;
             popupAbout.innerHTML = all_Cards[dataIdCard][cardId].fullDescription;
-            // popupPrice.innerHTML = all_Cards[dataIdCard][cardId].price;
-
         }
     })
     updateSlides(num - 1, all_Cards[dataIdCard]);
 };
-
-
-
-
-// Карусель настройка
 
 const carouselInner = document.querySelector('.carousel-inner');
 const carouselIndicators = document.querySelector('.carousel-indicators');
