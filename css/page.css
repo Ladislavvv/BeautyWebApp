@@ -130,6 +130,11 @@ body {
         width: 60px;
         height: 60px;
     }
+
+    .logo > a > img{
+        width: 60px;
+        height: 60px;
+    }
 }
 
 .header__menu{
@@ -161,7 +166,7 @@ body {
 
 .menu__link:hover {
     color: #e23f3f;
-}  */
+} 
 
 .type_body{
     display: flex;
